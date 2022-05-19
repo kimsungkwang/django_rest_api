@@ -1,8 +1,8 @@
-#product/serializers.py
+#account/serializers.py
 from rest_framework import serializers
-from .models import Product
+from .models import account
 
 class ProductSerializer(serializers.ModelSerializer) :
     class Meta :
-        model = Product        # product 모델 사용
+        model = account        # account 모델 사용
         fields = '__all__'            # 모든 필드 포함
